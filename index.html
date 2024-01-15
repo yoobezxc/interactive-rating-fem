@@ -13,44 +13,78 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Rating state start -->
+    <div id="rating" class="card-rating">
+      <img
+        class="card-rating-star"
+        src="images/icon-star.svg"
+        alt="star icon"
+      />
 
-    <!-- How did we do?
+      <h1 class="card-rating-title">How did we do?</h1>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <p class="card-rating-text">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
 
-  1 2 3 4 5
+      <ul class="card-rating-number">
+        <li>
+          <button class="card-btn-rating">1</button>
+        </li>
+        <li>
+          <button class="card-btn-rating">2</button>
+        </li>
+        <li>
+          <button class="card-btn-rating">3</button>
+        </li>
+        <li>
+          <button class="card-btn-rating">4</button>
+        </li>
+        <li>
+          <button class="card-btn-rating">5</button>
+        </li>
+      </ul>
 
-  Submit -->
+      <button id="btn-submit" class="card-btn-submit">Submit</button>
+    </div>
 
-    <!-- Rating state end -->
+    <div id="thankYou" class="card-thankYou hidden">
+      <img
+        class="card-thankYou-img"
+        src="images/illustration-thank-you.svg"
+        alt="thank you image"
+      />
 
-    <!-- Thank you state start -->
+      <h2 class="card-thankYou-result">
+        You selected <span id="card-thankYou-number"></span> out of 5
+      </h2>
 
-    <!-- You selected -- Add rating here -- out of 5
+      <h1 class="card-thankYou-title">Thank you!</h1>
 
-  Thank you!
+      <p class="card-thankYou-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
-
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/yoobezxc" target="_blank">Yoobe</a>.
+    </div>
   </body>
 </html>

@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+}
+
+.card-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card-rating-star {
+  width: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 25%);
+}
+
+.card-rating-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card-rating-text {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(217, 12%, 63%);
+}
+
+.card-rating-number {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-btn-rating {
+  padding: 8.5px 13px;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 25%);
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-btn-rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card-btn-rating:focus {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card-btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.card-thankYou {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 280px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-thankYou-img {
+  width: 150px;
+  margin: auto;
+}
+
+.card-thankYou-result {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: hsl(213, 19%, 25%);
+  color: hsl(25, 97%, 53%);
+  padding: 10px;
+  width: 160px;
+  border-radius: 20px;
+}
+
+.card-thankYou-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card-thankYou-text {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(217, 12%, 63%);
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(25, 97%, 53%);
+}
